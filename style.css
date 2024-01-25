@@ -1,0 +1,96 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #1F3932;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #1F3932;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    background-color: #E2FFFA;
+}
+
+.section-title {
+    font-family: monospace;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #E2FFFA;
+}
+
+.text-colored {
+    color: #1F3932;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #1F3932;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #1F3932;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+.hist-container img {
+    width: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .hist-container {
+        flex-direction: column;
+    }
+
+    .hist-container img {
+        width: 100%;    
+    }
+
+}
+
+.image-container {
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.hist-container {
+    display: flex;
+}
+
