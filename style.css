@@ -38,6 +38,233 @@ body {
     color: #1F3932;
 }
 
+/* Destaques Section */
+#destaques {
+    background: linear-gradient(135deg, #1F3932 0%, #2d574b 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#destaques::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(226, 255, 250, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+#destaques .section-title {
+    color: #fff;
+}
+
+#destaques .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.highlights-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    color: #E2FFFA;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    gap: 1.25rem;
+}
+
+.highlight-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.highlight-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.highlight-card:hover img {
+    transform: scale(1.1);
+}
+
+.highlight-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.highlight-card:hover .highlight-overlay {
+    background: linear-gradient(to top, rgba(31, 57, 50, 0.95) 0%, rgba(31, 57, 50, 0.6) 50%, transparent 100%);
+}
+
+.highlight-tag {
+    display: inline-block;
+    background: #E2FFFA;
+    color: #1F3932;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    width: fit-content;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.4s ease 0.1s;
+}
+
+.highlight-card:hover .highlight-tag {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.highlight-overlay h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    transform: translateY(10px);
+    transition: transform 0.4s ease;
+}
+
+.highlight-card:hover .highlight-overlay h3 {
+    transform: translateY(0);
+}
+
+.highlight-overlay p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+    margin: 0;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.4s ease 0.15s;
+}
+
+.highlight-card:hover .highlight-overlay p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.highlight-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.4s ease 0.2s;
+}
+
+.highlight-card:hover .highlight-rating {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.highlight-rating i {
+    color: #f5c518;
+    font-size: 0.875rem;
+}
+
+.highlight-rating span {
+    color: #fff;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.highlight-card-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.highlight-card-large .highlight-overlay {
+    padding: 2rem;
+}
+
+.highlight-card-large .highlight-overlay h3 {
+    font-size: 1.75rem;
+}
+
+.highlight-card-large .highlight-overlay p {
+    font-size: 1rem;
+}
+
+.highlight-card-wide {
+    grid-column: span 2;
+}
+
+@media (max-width: 991px) {
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .highlight-card {
+        min-height: 250px;
+    }
+
+    .highlight-card-large {
+        grid-column: span 2;
+        grid-row: span 1;
+        min-height: 350px;
+    }
+
+    .highlight-card-wide {
+        grid-column: span 2;
+    }
+
+    .highlight-tag {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .highlight-overlay p {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .highlight-rating {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 575px) {
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-card-large,
+    .highlight-card-wide {
+        grid-column: span 1;
+    }
+
+    .highlight-card {
+        min-height: 280px;
+    }
+}
+
 /* Cardápio Section */
 #cardapio {
     background-color: #E2FFFA;
