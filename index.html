@@ -273,11 +273,14 @@
           </div>
           <div class="row">
             <div class="col-lg-3 mb-4 mb-lg-0">
-              <div class="menu-categories">
+              <div class="menu-categories" role="tablist">
                 <button
                   type="button"
+                  role="tab"
                   data-bs-toggle="tab"
                   data-bs-target="#bebidas-quentes"
+                  aria-controls="bebidas-quentes"
+                  aria-selected="true"
                   class="menu-category-btn active"
                 >
                   <i class="bi bi-cup-hot-fill me-2"></i>
@@ -285,8 +288,11 @@
                 </button>
                 <button
                   type="button"
+                  role="tab"
                   data-bs-toggle="tab"
                   data-bs-target="#bebidas-geladas"
+                  aria-controls="bebidas-geladas"
+                  aria-selected="false"
                   class="menu-category-btn"
                 >
                   <i class="bi bi-snow me-2"></i>
@@ -294,8 +300,11 @@
                 </button>
                 <button
                   type="button"
+                  role="tab"
                   data-bs-toggle="tab"
                   data-bs-target="#doces"
+                  aria-controls="doces"
+                  aria-selected="false"
                   class="menu-category-btn"
                 >
                   <i class="bi bi-cake2-fill me-2"></i>
@@ -303,8 +312,11 @@
                 </button>
                 <button
                   type="button"
+                  role="tab"
                   data-bs-toggle="tab"
                   data-bs-target="#salgados"
+                  aria-controls="salgados"
+                  aria-selected="false"
                   class="menu-category-btn"
                 >
                   <i class="bi bi-egg-fried me-2"></i>
@@ -314,7 +326,7 @@
             </div>
             <div class="col-lg-9">
               <div class="tab-content">
-                <div class="tab-pane active" id="bebidas-quentes">
+                <div class="tab-pane fade show active" id="bebidas-quentes" role="tabpanel">
                   <div class="row g-4">
                     <div class="col-md-4">
                       <div class="menu-item-card">
@@ -357,7 +369,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="bebidas-geladas">
+                <div class="tab-pane fade" id="bebidas-geladas" role="tabpanel">
                   <div class="row g-4">
                     <div class="col-md-4">
                       <div class="menu-item-card">
@@ -400,7 +412,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="doces">
+                <div class="tab-pane fade" id="doces" role="tabpanel">
                   <div class="row g-4">
                     <div class="col-md-4">
                       <div class="menu-item-card">
@@ -443,7 +455,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="salgados">
+                <div class="tab-pane fade" id="salgados" role="tabpanel">
                   <div class="row g-4">
                     <div class="col-md-4">
                       <div class="menu-item-card">
@@ -709,5 +721,14 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Handle active state for menu category buttons
+      document.querySelectorAll('.menu-category-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          document.querySelectorAll('.menu-category-btn').forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    </script>
   </body>
 </html>
