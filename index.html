@@ -77,64 +77,96 @@
       data-bs-smooth-scroll="true"
     >
       <section id="sobre">
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img
-                class="d-block w-100"
-                src="images/hero/coffee-1.avif"
-                alt="restaurante"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                class="d-block w-100"
-                src="images/hero/coffee-2.jpg"
-                alt="taça de vinho"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                class="d-block w-100"
-                src="images/hero/coffee-3.webp"
-                alt="mesa cheia de comida"
-              />
+        <div class="hero-section">
+          <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  src="images/hero/coffee-1.avif"
+                  alt="Interior acolhedor da cafeteria"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  src="images/hero/coffee-2.jpg"
+                  alt="Café sendo preparado"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  src="images/hero/coffee-3.webp"
+                  alt="Delícias da nossa cafeteria"
+                />
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-          <div class="carousel-indicators">
+          <div class="hero-overlay">
+            <div class="container">
+              <div class="hero-content">
+                <span class="hero-badge">
+                  <i class="bi bi-cup-hot-fill me-2"></i>Desde 2015
+                </span>
+                <h1 class="hero-title">
+                  O melhor café<br />
+                  <span class="hero-highlight">da cidade</span>
+                </h1>
+                <p class="hero-subtitle">
+                  Grãos selecionados, torrados artesanalmente e preparados com paixão.
+                  Venha viver uma experiência única.
+                </p>
+                <div class="hero-buttons">
+                  <a href="#cardapio" class="btn hero-btn-primary">
+                    <i class="bi bi-card-text me-2"></i>Ver cardápio
+                  </a>
+                  <a href="#fale-conosco" class="btn hero-btn-secondary">
+                    <i class="bi bi-geo-alt me-2"></i>Como chegar
+                  </a>
+                </div>
+                <div class="hero-stats">
+                  <div class="hero-stat">
+                    <span class="hero-stat-number">10+</span>
+                    <span class="hero-stat-label">Anos de experiência</span>
+                  </div>
+                  <div class="hero-stat">
+                    <span class="hero-stat-number">50+</span>
+                    <span class="hero-stat-label">Bebidas no cardápio</span>
+                  </div>
+                  <div class="hero-stat">
+                    <span class="hero-stat-number">5<i class="bi bi-star-fill ms-1"></i></span>
+                    <span class="hero-stat-label">Avaliação Google</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-indicators">
             <button
               type="button"
               data-bs-target="#carousel"
               data-bs-slide-to="0"
               class="active"
+              aria-label="Slide 1"
             ></button>
             <button
               type="button"
               data-bs-target="#carousel"
               data-bs-slide-to="1"
+              aria-label="Slide 2"
             ></button>
             <button
               type="button"
               data-bs-target="#carousel"
               data-bs-slide-to="2"
+              aria-label="Slide 3"
             ></button>
           </div>
+          <a href="#destaques" class="hero-scroll-indicator">
+            <span>Explorar</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
         </div>
         <div class="pt-5 pb-5">
           <div class="container">
