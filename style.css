@@ -38,13 +38,94 @@ body {
     color: #1F3932;
 }
 
-.nav-cardapio .nav-link.active {
-    background-color: #1F3932;
+/* Cardápio Section */
+#cardapio {
+    background-color: #E2FFFA;
+}
+
+.menu-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.menu-category-btn {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #1F3932;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-category-btn:hover {
+    border-color: #1F3932;
+    transform: translateX(5px);
+}
+
+.menu-category-btn.active {
+    background: #1F3932;
     color: #fff;
 }
 
-.nav-cardapio .nav-link:hover {
+.menu-item-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item-card:hover .menu-item-image img {
+    transform: scale(1.05);
+}
+
+.menu-item-content {
+    padding: 1.25rem;
+}
+
+.menu-item-content h5 {
     color: #1F3932;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 991px) {
+    .menu-categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-category-btn {
+        flex: 0 0 auto;
+    }
+
+    .menu-category-btn:hover {
+        transform: translateY(-3px);
+    }
 }
 
 /* Depoimentos Section */

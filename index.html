@@ -259,210 +259,229 @@
           </div>
         </div>
       </section>
-      <section class="pt-5 pb-5" id="cardapio">
+      <section class="py-5" id="cardapio">
         <div class="container">
-          <div class="row">
-            <h2 class="section-title mb-5 text-center">
-              Nosso <span class="text-colored">cardápio</span>
-            </h2>
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title">
+                Nosso <span class="text-colored">cardápio</span>
+              </h2>
+              <p class="text-muted mt-3">
+                Conheça nossas delícias preparadas com carinho
+              </p>
+            </div>
           </div>
           <div class="row">
-            <aside class="col-md-2">
-              <nav class="nav nav-pills flex-column nav-cardapio">
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <div class="menu-categories">
                 <button
                   type="button"
                   data-bs-toggle="tab"
                   data-bs-target="#bebidas-quentes"
-                  class="nav-link fw-bold text-start text-colored active"
+                  class="menu-category-btn active"
                 >
+                  <i class="bi bi-cup-hot-fill me-2"></i>
                   Bebidas quentes
                 </button>
                 <button
                   type="button"
                   data-bs-toggle="tab"
                   data-bs-target="#bebidas-geladas"
-                  class="nav-link fw-bold text-start text-colored"
+                  class="menu-category-btn"
                 >
+                  <i class="bi bi-snow me-2"></i>
                   Bebidas geladas
                 </button>
                 <button
                   type="button"
                   data-bs-toggle="tab"
                   data-bs-target="#doces"
-                  class="nav-link fw-bold text-start text-colored"
+                  class="menu-category-btn"
                 >
+                  <i class="bi bi-cake2-fill me-2"></i>
                   Doces
                 </button>
                 <button
                   type="button"
                   data-bs-toggle="tab"
                   data-bs-target="#salgados"
-                  class="nav-link fw-bold text-start text-colored"
+                  class="menu-category-btn"
                 >
+                  <i class="bi bi-egg-fried me-2"></i>
                   Salgados
                 </button>
-              </nav>
-            </aside>
-            <div class="col-md-10">
-              <div class="col-md-10">
-                <div class="tab-content">
-                  <div class="tab-pane active" id="bebidas-quentes">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/hazelnut_latte.webp"
-                          alt="latte de avelã"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">
-                          Latte de avelã
-                        </h5>
-                        <p class="text-muted">
-                          Espresso cremoso com toque suave de avelã e leite vaporizado.
-                        </p>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="tab-content">
+                <div class="tab-pane active" id="bebidas-quentes">
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/hazelnut_latte.webp" alt="latte de avelã" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Latte de avelã</h5>
+                          <p class="text-muted mb-0">
+                            Espresso cremoso com toque suave de avelã e leite vaporizado.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/espresso.jpeg"
-                          alt="espresso"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">
-                          Espresso tradicional
-                        </h5>
-                        <p class="text-muted">
-                          Shot intenso de café 100% arábica, extraído na pressão perfeita.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/espresso.jpeg" alt="espresso" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Espresso tradicional</h5>
+                          <p class="text-muted mb-0">
+                            Shot intenso de café 100% arábica, extraído na pressão perfeita.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/cappuccino.webp"
-                          alt="cappuccino"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">
-                          Cappuccino tradicional
-                        </h5>
-                        <p class="text-muted">
-                          Espresso, leite vaporizado e espuma aveludada com canela.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/cappuccino.webp" alt="cappuccino" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Cappuccino tradicional</h5>
+                          <p class="text-muted mb-0">
+                            Espresso, leite vaporizado e espuma aveludada com canela.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane" id="bebidas-geladas">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/cafe-gelado.webp"
-                          alt="cafe gelado"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">
-                          Café gelado cremoso
-                        </h5>
-                        <p class="text-muted">
-                          Café cold brew batido com leite e gelo, perfeito para dias quentes.
-                        </p>
+                </div>
+                <div class="tab-pane" id="bebidas-geladas">
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/cafe-gelado.webp" alt="cafe gelado" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Café gelado cremoso</h5>
+                          <p class="text-muted mb-0">
+                            Café cold brew batido com leite e gelo, perfeito para dias quentes.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/cha-gelado-destaque.webp"
-                          alt="chá gelado"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">Chá gelado</h5>
-                        <p class="text-muted">
-                          Chá natural refrescante com frutas frescas e hortelã.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/cha-gelado-destaque.webp" alt="chá gelado" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Chá gelado</h5>
+                          <p class="text-muted mb-0">
+                            Chá natural refrescante com frutas frescas e hortelã.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/affogato.jpeg"
-                          alt="cafe affogato"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">Affogato</h5>
-                        <p class="text-muted">
-                          Sorvete de creme coberto com shot de espresso quente.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/affogato.jpeg" alt="cafe affogato" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Affogato</h5>
+                          <p class="text-muted mb-0">
+                            Sorvete de creme coberto com shot de espresso quente.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane" id="doces">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/brownie.avif"
-                          alt="brownie com sorvete"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">
-                          Brownie com sorvete
-                        </h5>
-                        <p class="text-muted">
-                          Brownie caseiro quentinho com sorvete de baunilha.
-                        </p>
+                </div>
+                <div class="tab-pane" id="doces">
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/brownie.avif" alt="brownie com sorvete" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Brownie com sorvete</h5>
+                          <p class="text-muted mb-0">
+                            Brownie caseiro quentinho com sorvete de baunilha.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/torta-churros.webp"
-                          alt="torta de churros"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">
-                          Torta de churros
-                        </h5>
-                        <p class="text-muted">
-                          Massa crocante de churros com recheio cremoso de doce de leite.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/torta-churros.webp" alt="torta de churros" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Torta de churros</h5>
+                          <p class="text-muted mb-0">
+                            Massa crocante de churros com recheio cremoso de doce de leite.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/cheesecake.webp"
-                          alt="cheesecake"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">Cheesecake</h5>
-                        <p class="text-muted">
-                          Cheesecake cremoso com calda de frutas vermelhas.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/cheesecake.webp" alt="cheesecake" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Cheesecake</h5>
+                          <p class="text-muted mb-0">
+                            Cheesecake cremoso com calda de frutas vermelhas.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane" id="salgados">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/croissant.jpeg"
-                          alt="croissant"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">Croissant</h5>
-                        <p class="text-muted">
-                          Croissant folhado e amanteigado, assado fresquinho toda manhã.
-                        </p>
+                </div>
+                <div class="tab-pane" id="salgados">
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/croissant.jpeg" alt="croissant" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Croissant</h5>
+                          <p class="text-muted mb-0">
+                            Croissant folhado e amanteigado, assado fresquinho toda manhã.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/empada.jpeg"
-                          alt="empada"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">Empada</h5>
-                        <p class="text-muted">
-                          Empada artesanal com massa crocante e recheio generoso.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/empada.jpeg" alt="empada" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Empada</h5>
+                          <p class="text-muted mb-0">
+                            Empada artesanal com massa crocante e recheio generoso.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-3">
-                        <img
-                          class="d-block w-100"
-                          src="images/destaques/pao-de-queijo.jpeg"
-                          alt="pao de queijo"
-                        />
-                        <h5 class="text-colored mt-2 fw-bold">Pão de queijo</h5>
-                        <p class="text-muted">
-                          Pão de queijo mineiro tradicional, quentinho e crocante.
-                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="menu-item-card">
+                        <div class="menu-item-image">
+                          <img src="images/destaques/pao-de-queijo.jpeg" alt="pao de queijo" />
+                        </div>
+                        <div class="menu-item-content">
+                          <h5 class="fw-bold">Pão de queijo</h5>
+                          <p class="text-muted mb-0">
+                            Pão de queijo mineiro tradicional, quentinho e crocante.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
