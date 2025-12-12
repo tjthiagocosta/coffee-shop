@@ -749,6 +749,25 @@
           this.classList.add('active');
         });
       });
+
+      // Sync hero indicators with carousel
+      const heroCarousel = document.getElementById('carousel');
+      const heroIndicators = document.querySelectorAll('.hero-indicators button');
+
+      // Update indicators when carousel slides
+      heroCarousel.addEventListener('slid.bs.carousel', function(event) {
+        heroIndicators.forEach(btn => btn.classList.remove('active'));
+        heroIndicators[event.to].classList.add('active');
+      });
+
+      // Make indicators clickable
+      heroIndicators.forEach(button => {
+        button.addEventListener('click', function() {
+          const slideIndex = this.getAttribute('data-bs-slide-to');
+          const carousel = bootstrap.Carousel.getOrCreateInstance(heroCarousel);
+          carousel.to(parseInt(slideIndex));
+        });
+      });
     </script>
   </body>
 </html>
