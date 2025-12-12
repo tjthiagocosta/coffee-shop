@@ -79,8 +79,8 @@ body {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 200px;
     gap: 1.25rem;
 }
 
@@ -89,6 +89,8 @@ body {
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .highlight-card img {
@@ -194,7 +196,7 @@ body {
 }
 
 .highlight-card-large {
-    grid-column: span 2;
+    grid-column: span 6;
     grid-row: span 2;
 }
 
@@ -211,27 +213,26 @@ body {
 }
 
 .highlight-card-wide {
-    grid-column: span 2;
+    grid-column: span 6;
 }
 
 @media (max-width: 991px) {
     .highlights-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 180px;
     }
 
     .highlight-card {
-        min-height: 250px;
+        grid-column: span 3;
     }
 
     .highlight-card-large {
-        grid-column: span 2;
-        grid-row: span 1;
-        min-height: 350px;
+        grid-column: span 6;
+        grid-row: span 2;
     }
 
     .highlight-card-wide {
-        grid-column: span 2;
+        grid-column: span 6;
     }
 
     .highlight-tag {
@@ -253,15 +254,14 @@ body {
 @media (max-width: 575px) {
     .highlights-grid {
         grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
     }
 
+    .highlight-card,
     .highlight-card-large,
     .highlight-card-wide {
         grid-column: span 1;
-    }
-
-    .highlight-card {
-        min-height: 280px;
+        grid-row: span 1;
     }
 }
 
