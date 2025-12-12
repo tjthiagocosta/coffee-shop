@@ -472,85 +472,125 @@
           </div>
         </div>
       </section>
-      <section id="fale-conosco" class="pt-5 pb-5">
+      <section id="fale-conosco" class="py-5">
         <div class="container">
-          <div class="row">
-            <h2 class="section-title text-center">
-              Fale <span class="text-colored">conosco</span>
-            </h2>
-          </div>
-          <div class="row">
-            <div class="col-md-7 mb-5">
-              <form>
-                <div class="mb-3">
-                  <label class="text-colored fw-bold form-label" for="nome"
-                    >Seu nome</label
-                  >
-                  <input class="form-control" type="text" id="nome" required />
-                </div>
-                <div class="mb-3">
-                  <label class="text-colored fw-bold form-label" for="email"
-                    >Seu email</label
-                  >
-                  <input
-                    class="form-control"
-                    type="email"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label class="text-colored fw-bold form-label" for="telefone"
-                    >Seu telefone (opcional)</label
-                  >
-                  <input class="form-control" type="tel" id="telefone" />
-                </div>
-                <div class="mb-3">
-                  <label class="text-colored fw-bold form-label" for="mensagem"
-                    >Sua mensagem</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="mensagem"
-                    required
-                  ></textarea>
-                </div>
-                <button class="btn fw-bold" type="submit">Enviar</button>
-              </form>
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title">
+                Fale <span class="text-colored">conosco</span>
+              </h2>
+              <p class="text-muted mt-3">
+                Tem alguma dúvida ou sugestão? Entre em contato conosco!
+              </p>
             </div>
-            <div class="col-md-5">
-              <div class="row">
-                <h3 class="section-title fs-4 text-colored">
-                  <i class="bi bi-hand-thumbs-up-fill"></i>
-                  Redes sociais
-                </h3>
-                <ul class="social-links">
-                  <li class="fs-5">
-                    <a href="#">
-                      <i class="bi bi-facebook text-colored"></i>
-                    </a>
-                  </li>
-                  <li class="fs-5 ms-1 me-1">
-                    <a href="#">
-                      <i class="bi bi-instagram text-colored"></i>
-                    </a>
-                  </li>
-                  <li class="fs-5">
-                    <a href="#">
-                      <i class="bi bi-whatsapp text-colored"></i>
-                    </a>
-                  </li>
-                </ul>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-7">
+              <div class="contact-form-card">
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold" for="nome">Seu nome</label>
+                      <input
+                        class="form-control form-control-lg"
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold" for="email">Seu email</label>
+                      <input
+                        class="form-control form-control-lg"
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu email"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label fw-bold" for="telefone">Seu telefone (opcional)</label>
+                      <input
+                        class="form-control form-control-lg"
+                        type="tel"
+                        id="telefone"
+                        placeholder="(00) 00000-0000"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label fw-bold" for="mensagem">Sua mensagem</label>
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="mensagem"
+                        rows="5"
+                        placeholder="Escreva sua mensagem aqui..."
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-enviar btn-lg w-100 fw-bold" type="submit">
+                        <i class="bi bi-send me-2"></i>Enviar mensagem
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="row mt-4">
-                <h3 class="section-title fs-4 text-colored">
-                  <i class="bi bi-cursor-fill"></i>
-                  Endereço
-                </h3>
-                <p>
-                  Rua Exemplo de nome, nº 145, Bairro Javascript - São Paulo -
-                  SP
-                </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="contact-info">
+                <div class="contact-info-item mb-4">
+                  <div class="contact-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="fw-bold mb-2">Endereço</h4>
+                    <p class="text-muted mb-0">
+                      Rua Exemplo de nome, nº 145<br />
+                      Bairro Javascript - São Paulo - SP
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-info-item mb-4">
+                  <div class="contact-icon">
+                    <i class="bi bi-clock-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="fw-bold mb-2">Horário de funcionamento</h4>
+                    <p class="text-muted mb-0">
+                      Seg - Sex: 7h às 20h<br />
+                      Sáb - Dom: 8h às 18h
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-info-item mb-4">
+                  <div class="contact-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="fw-bold mb-2">Telefone</h4>
+                    <p class="text-muted mb-0">(11) 99999-9999</p>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="contact-icon">
+                    <i class="bi bi-share-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="fw-bold mb-2">Redes sociais</h4>
+                    <div class="social-links-modern">
+                      <a href="#" class="social-link">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                        <i class="bi bi-whatsapp"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
