@@ -38,6 +38,10 @@ body {
     color: #1F3932;
 }
 
+.text-highlight {
+    color: #E2FFFA;
+}
+
 /* Destaques Section */
 #destaques {
     background: linear-gradient(135deg, #1F3932 0%, #2d574b 100%);
