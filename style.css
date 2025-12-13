@@ -321,6 +321,165 @@ body {
     }
 }
 
+/* History Section */
+.history-section {
+    background-color: #fff;
+}
+
+.history-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #E2FFFA;
+    color: #1F3932;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.history-image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(31, 57, 50, 0.15);
+}
+
+.history-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.history-image-wrapper:hover .history-image {
+    transform: scale(1.05);
+}
+
+.history-image-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #1F3932;
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.history-years {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #E2FFFA;
+}
+
+.history-years-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.history-content {
+    padding-left: 1rem;
+}
+
+.history-item {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.history-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #1F3932 0%, #2d574b 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(31, 57, 50, 0.3);
+}
+
+.history-icon i {
+    color: #E2FFFA;
+    font-size: 1.25rem;
+}
+
+.history-item h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1F3932;
+    margin-bottom: 0.75rem;
+}
+
+.history-item p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.history-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.history-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.history-feature i {
+    color: #1F3932;
+    font-size: 1.1rem;
+}
+
+.history-feature span {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 991px) {
+    .history-image {
+        height: 400px;
+    }
+
+    .history-content {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .history-image {
+        height: 300px;
+    }
+
+    .history-features {
+        grid-template-columns: 1fr;
+    }
+
+    .history-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .history-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
 #sobre-o-restaurante, #cardapio {
     background-color: #E2FFFA;
 }
@@ -840,34 +999,4 @@ body {
     font-size: 1.1rem;
 }
 
-.hist-container img {
-    width: 50%;
-    object-fit: cover;
-}
-
-@media (max-width: 767px) {
-    .hist-container {
-        flex-direction: column;
-    }
-
-    .hist-container img {
-        width: 100%;
-    }
-}
-
-.image-container {
-    height: 400px; /* Adjust the height as needed */
-    overflow: hidden;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.hist-container {
-    display: flex;
-}
 
